@@ -5,100 +5,34 @@ description: "Guia completo sobre a stablecoin brasileira BRZ na blockchain Flow
 
 # BRZ Token na Flow
 
-O BRZ é a principal stablecoin brasileira na blockchain Flow, mantendo paridade 1:1 com o Real Brasileiro (BRL).
+O que é isso? O BRZ é a principal stablecoin brasileira na blockchain Flow. Suas principais características incluem:
 
-## Características
+- **Paridade 1:1 com o Real Brasileiro (BRL)**
+- **Totalmente lastreada e auditada**
+- **Compatível com o padrão FungibleToken da Flow**
+- **Suporte multi-chain**
 
-* **Pareamento 1:1 com Real Brasileiro**
+O BRZ na Flow opera através de um smart contract que permite:
 
-* **Totalmente lastreada e auditada**
+- **Transferências entre contas**
+- **Integração com dApps**
+- **Consulta de saldos**
+- **Operações de mint e burn controladas**
 
-* **Compatível com padrão FungibleToken da Flow**
-
-* **Suporte multi-chain**
-
-## Como Funciona
-
-O BRZ na Flow opera através de um smart contract que segue o padrão FungibleToken, permitindo:
-
-* **Transferências entre contas**
-
-* **Integração com dApps**
-
-* **Consulta de saldos**
-
-* **Operações de mint e burn controladas**
-
-## Casos de Uso
+Alguns casos de uso comuns para o BRZ incluem:
 
 ### DeFi
 
-* **Empréstimos**
-
-* **Yield farming**
-
-* **Pools de liquidez**
-
-* **Staking**
+- **Empréstimos**
+- **Yield farming**
+- **Pools de liquidez**
+- **Staking**
 
 ### Pagamentos
 
-* **Transferências P2P**
-
-* **Integrações comerciais**
-
-* **Remessas internacionais**
-
-* **Pagamentos em dApps**
+- **Transferências P2P**
+- **Integrações comerciais**
+- **Remessas internacionais**
+- **Pagamentos em dApps**
 
 ## Começando
-
-```cadence
-import FungibleToken from 0xf233dcee88fe0abe
-import BRZ from 0x123456789 // endereço do contrato BRZ
-
-transaction(amount: UFix64, recipient: Address) {
-    prepare(signer: AuthAccount) {
-        let payment <- signer.borrow<&BRZ.Vault>(from: /storage/brzVault)!
-            .withdraw(amount: amount)
-
-        let recipientAccount = getAccount(recipient)
-        let receiver = recipientAccount
-            .getCapability(/public/brzReceiver)
-            .borrow<&BRZ.Vault{FungibleToken.Receiver}>()
-            ?? panic("Recipient not set up to receive BRZ")
-
-        receiver.deposit(from: <-payment)
-    }
-}
-```
-
-## Recursos
-
-* [Site Oficial BRZ](https://www.brztoken.io)
-
-* [Documentação Flow](https://docs.onflow.org)
-
-* [GitHub BRZ](https://github.com/transfero-automated-finance)
-
-## Segurança
-
-O BRZ mantém seu lastro em instituições financeiras regulamentadas e passa por auditorias regulares. Na blockchain Flow, o contrato segue as melhores práticas de segurança e é auditado por empresas especializadas.
-
-***
-
-Este arquivo MDX fornece uma documentação completa sobre o BRZ na Flow, incluindo:
-
-* Visão geral do token
-
-* Características principais
-
-* Exemplos de código
-
-* Casos de uso
-
-* Recursos e links importantes
-
-* Informações de segurança
-
-O formato MDX permite que este conteúdo seja facilmente integrado em documentações técnicas e sites, com suporte a markdown e componentes React quando necessário.
