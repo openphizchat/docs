@@ -19,9 +19,4 @@
       "pages": ["brz_flow/BRZ"]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/meuprojeto",
-    "github": "https://github.com/meuprojeto",
-    "linkedin": "https://linkedin.com/company/meuprojeto"
-  }
 }
