@@ -1,9 +1,8 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Meu Projeto",
+  "name": "BRZ na Flow Blockchain",
   "logo": {
     "light": "/logo/meu-logo-light.png",
-    "dark": "/logo/meu-logo-dark.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -14,39 +13,6 @@
       "to": "#654321"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Contato",
-      "url": "mailto:contato@meuprojeto.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Painel",
-    "url": "https://painel.meuprojeto.com"
-  },
-  "tabs": [
-    {
-      "name": "Referência API",
-      "url": "api-referencia"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentação",
-      "icon": "book-open-cover",
-      "url": "https://meuprojeto.com/docs"
-    },
-    {
-      "name": "Comunidade",
-      "icon": "slack",
-      "url": "https://meuprojeto.com/comunidade"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://meuprojeto.com/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Introdução",
