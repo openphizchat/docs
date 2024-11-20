@@ -16,5 +16,12 @@
       "group": "Introdução",
       "pages": ["brz_flow/BRZ"]
     }
+  ],
+  "versions": [
+    {
+      "name": "Versão principal",
+      "locale": "pt-BR",
+      "default": true
+    }
   ]
 }
