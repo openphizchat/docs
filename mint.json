@@ -19,9 +19,13 @@
   ],
   "versions": [
     {
-      "name": "Versão principal",
+      "name": "PT-BR",
       "locale": "pt-BR",
       "default": true
+    },
+    {
+      "name": "EN",
+      "locale": "en"
     }
   ]
 }
