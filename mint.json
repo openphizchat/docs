@@ -1,7 +1,10 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "BRZ na Flow Blockchain",
-  "logo": "logo/light.png",
+  "logo": {
+    "light": "logo/light.png",
+    "dark": "logo/dark.png"
+  },
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#2E7D32",
@@ -11,10 +14,12 @@
       "to": "#81C784"
     }
   },
+  "theme": "venus",
+  "layout": "topnav",
   "navigation": [
     {
       "group": "Introdução",
-      "pages": ["brz_flow/BRZ-pt", "brz_flow/BRZ-en"]
+      "pages": ["brz_flow/BRZ-pt", "brz_flow/BRZ-en", "brz_flow/BRZ-es"]
     }
   ],
   "versions": [
@@ -26,6 +31,10 @@
     {
       "name": "EN",
       "locale": "en"
+    },
+    {
+      "name": "ES",
+      "locale": "es"
     }
   ]
 }
